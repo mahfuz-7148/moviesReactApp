@@ -32,6 +32,8 @@ const App = () => {
             const response = await fetch(endPoint, API_OPTIONS);
             if (!response.ok) {
                 throw new Error("Failed to fetch movies");
+
+
             }
             const data = await response.json();
             console.log(data);
@@ -50,7 +52,8 @@ const App = () => {
     };
 
     useEffect(() => {
-        fetchMovies();
+        fetchMovies()
+
 
     }, []);
 
@@ -73,7 +76,7 @@ const App = () => {
 
                     {isLoading ? (
 
-                           <Spinner/>
+                        <Spinner/>
 
                     ) : errorMessage ? (
                         <p className="text-teal-400">{errorMessage}</p>
