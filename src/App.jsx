@@ -59,6 +59,9 @@ const App = () => {
 
     return (
         <main>
+
+
+
             <div className="pattern"/>
             <div className="wrapper">
                 <header>
