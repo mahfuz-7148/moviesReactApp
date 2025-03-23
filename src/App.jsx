@@ -73,7 +73,7 @@ const App = () => {
 
                     {isLoading ? (
 
-                        <Spinner/>
+                           <Spinner/>
 
                     ) : errorMessage ? (
                         <p className="text-teal-400">{errorMessage}</p>
